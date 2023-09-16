@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.alata {
+  font-family: 'Alata', sans-serif;
+}
+
+header {
+  height: 100vh;
+  background: url(/src/assets/images/mobile/image-hero.jpg) no-repeat;
+}
+
+.creation:hover img {
+  opacity: 0.5;
+}
+.creation:hover h3 {
+  color: black;
+  text-shadow: 0 0 10px white;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/src/assets/images/desktop/image-hero.jpg) no-repeat center/cover;
+    height: 95vh;
+  }
+}
