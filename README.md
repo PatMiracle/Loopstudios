@@ -9,7 +9,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [AnimateIntoView](#animateintoview)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -33,21 +32,8 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [animate.css](https://animate.style/)
 - [Tailwind](https://tailwindcss.com/) - CSS Framework
-- [React](https://react.dev/) - JS library
-
-### AnimateIntoView
-
-In the source code
-`/src/component/AnimateIntoView.jsx`
-, I bootstrap this component using animate.css to produce sort of a scrollReveal. It will add the animation class to the specific element as the element top position gets close to the window's inner height.
-
-```js
-if (elRef.current.getBoundingClientRect().y < window.innerHeight - 20) {
-  elRef.current.classList.add(`animate__${animation}`)
-}
-```
+- [React](https://react.dev/) - JavaScript library
 
 ## Author
 

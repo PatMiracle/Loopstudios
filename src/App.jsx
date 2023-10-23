@@ -1,6 +1,3 @@
-import 'animate.css'
-import './index.css'
-
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import About from './components/About'

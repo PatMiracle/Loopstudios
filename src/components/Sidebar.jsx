@@ -1,5 +1,5 @@
 import Logo from './Logo'
-import { useSidebarContext } from '../context/AppContext'
+import useSidebarContext from '../hooks/useSidebarContext'
 import close from '../assets/images/icon-close.svg'
 import { links } from '../utils/data'
 

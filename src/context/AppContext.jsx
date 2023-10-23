@@ -1,10 +1,6 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useState } from 'react'
 
-const SidebarContext = createContext(null)
-
-export const useSidebarContext = () => {
-  return useContext(SidebarContext)
-}
+export const SidebarContext = createContext(null)
 
 const AppContext = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false)

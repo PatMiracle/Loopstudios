@@ -1,7 +1,8 @@
 import Logo from './Logo'
 import menuBars from '../assets/images/icon-hamburger.svg'
-import { useSidebarContext } from '../context/AppContext'
+import useSidebarContext from '../hooks/useSidebarContext'
 import { links } from '../utils/data'
+import { motion } from 'framer-motion'
 
 const Header = () => {
   const { toggleSidebar } = useSidebarContext()
@@ -30,11 +31,15 @@ const Header = () => {
           <img src={menuBars} alt="menu" className="w-7" />
         </button>
       </nav>
-      <div className="my-40 lg:my-32 p-5 border-solid border-2 border-white sm:max-w-lg lg:max-w-xl animate__animated animate__fadeInLeft">
+      <motion.div
+        animate={{ x: [-150, 0] }}
+        transiton={{ ease: 'easeIn', duration: 4 }}
+        className="my-40 lg:my-32 p-5 border-solid border-2 border-white sm:max-w-lg lg:max-w-xl"
+      >
         <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl">
           IMMERSIVE EXPERIENCE THAT DELIVER
         </h1>
-      </div>
+      </motion.div>
     </header>
   )
 }
